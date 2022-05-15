@@ -17,6 +17,13 @@ C# 스크립트 및 강력한 UI를 결합해서 기존에 출시되어 있는 �
 손색없는 프로그램을 만드는게 목표
 
 
+## 개발메모
+- 지원하고 싶은 기능을 Nuget 단위로 분할
+- RoslynPad 분석 및 커스터마이징 연구
+- 디버깅 지원을 위한 CS-Script 연구
+- CSX 라이브러리 연구
+
+
 ## 라이브러리
 - [RoslynPad](https://github.com/roslynpad/roslynpad)<br>
 - [CS-Script](https://www.cs-script.net/)<br>
