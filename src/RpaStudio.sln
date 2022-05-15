@@ -5,7 +5,11 @@ VisualStudioVersion = 17.2.32427.441
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpaStudio", "RpaStudio\RpaStudio.csproj", "{456BE34A-5467-4926-B667-8BEEF1FCC683}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpaTestModule", "RpaTestModule\RpaTestModule.csproj", "{1F853F60-F861-419B-9EA4-473B372BD6F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpaTestModule", "RpaTestModule\RpaTestModule.csproj", "{1F853F60-F861-419B-9EA4-473B372BD6F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{26B37352-78D6-4849-815E-C04F5B621596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoslynTest", "RoslynTest\RoslynTest.csproj", "{12C2F174-3EAB-47A8-9060-9EED58676E99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,16 @@ Global
 		{1F853F60-F861-419B-9EA4-473B372BD6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F853F60-F861-419B-9EA4-473B372BD6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F853F60-F861-419B-9EA4-473B372BD6F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12C2F174-3EAB-47A8-9060-9EED58676E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C2F174-3EAB-47A8-9060-9EED58676E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C2F174-3EAB-47A8-9060-9EED58676E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C2F174-3EAB-47A8-9060-9EED58676E99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12C2F174-3EAB-47A8-9060-9EED58676E99} = {26B37352-78D6-4849-815E-C04F5B621596}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8236B843-AF9D-4AE6-9B13-042468A92350}

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RoslynPad.Editor.Windows" Version="1.2.0" />
+    <PackageReference Include="RoslynPad.Roslyn.Windows" Version="3.6.0" />
+  </ItemGroup>
+
+</Project>
