@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using RpaStudio.Local.ViewModel;
+using System.Windows;
 
 namespace RpaStudio.UI.Views
 {
@@ -7,6 +8,11 @@ namespace RpaStudio.UI.Views
         static StudioWindow()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(StudioWindow), new FrameworkPropertyMetadata(typeof(StudioWindow)));
+        }
+
+        public StudioWindow()
+        {
+            DataContext = new StudioViewModel();
         }
     }
 }

@@ -3,11 +3,12 @@
                     xmlns:views="clr-namespace:RpaStudio.UI.Views">
 
     <Style TargetType="{x:Type views:StudioWindow}">
+        <Setter Property="Background" Value="#FFFFFF"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type views:StudioWindow}">
-                    <Border>
-                        
+                    <Border Background="{TemplateBinding Background}">
+                        <TextBlock Text="{Binding}"/>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
