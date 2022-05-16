@@ -12,7 +12,7 @@ DevNcore RPA Studio
 RPA는 Robotic Process Automation의 약자이다.<br>
 즉 사람이 하는 반복적이고 규칙적인 업무를 소프트웨어 로봇을 적용하여 자동화 하는 기술이다. 
 
-## RPA-STUDIO
+## RPA Studio
 
 실무에서 반복적인 업무를 편하게 줄여줄 수 있는 기능을 지원하는 프로그램으로 C# 스크립트 및 강력한 UI를 결합해서 기존에 출시되어 있는 프로그램과 견주어도 손색없는 프로그램을 만드는 것이 목표입니다.
 
@@ -39,6 +39,7 @@ RPA는 Robotic Process Automation의 약자이다.<br>
 
 ## 참고 프로젝트
 - [dnSpy](https://github.com/dnSpy/dnSpy)<br>
-- [LinqPad](#)
 - [ILSpy](https://github.com/icsharpcode/ILSpy)
+- [LinqPad](#)
+- [SharpDeveloper](#)
 - [UI Path](#)
