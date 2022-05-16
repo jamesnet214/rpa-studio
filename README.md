@@ -16,16 +16,25 @@ RPA는 Robotic Process Automation의 약자이다.<br>
 C# 스크립트 및 강력한 UI를 결합해서 기존에 출시되어 있는 프로그램과 견주어도<br>
 손색없는 프로그램을 만드는게 목표
 
-## 개발메모
+## 개발 메모
 
-- 지원하고 싶은 기능을 Nuget 단위로 분할
-- RoslynPad 분석 및 커스터마이징 연구
-- 디버깅 지원을 위한 CS-Script 연구
-- CSX 라이브러리 연구
+- 자동화 기능을 Nuget 단위로 분할
+- RoslynPad 분석
+- scriptcs 분석
+- dnSpy 분석
+#
+- 파일 분할
+- 선택한 영역의 코드만 실행
+- 스케줄을 통한 스크립트 실행
+- 실행파일로 변환
+- 프로젝트로 변환
+- 예제코드 및 설명서
+- 인터프리터 (scriptcs)
+
 
 ## 라이브러리
 
 - [RoslynPad](https://github.com/roslynpad/roslynpad)<br>
-- [CS-Script](https://www.cs-script.net/)<br>
+- [dnSpy](https://github.com/dnSpy/dnSpy)<br>
 
 
