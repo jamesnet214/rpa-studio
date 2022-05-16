@@ -1,4 +1,6 @@
-# rpa-studio
+# RPA Studio
+DevNcore RPA Studio
+![image](https://user-images.githubusercontent.com/52397976/168648148-878f79d6-ec48-443d-af0a-788492bccc69.png)
 
 ## 내용
 - [RPA란?](#rpa란)
