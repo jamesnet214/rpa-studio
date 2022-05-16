@@ -40,4 +40,5 @@ C# 스크립트 및 강력한 UI를 결합해서 기존에 출시되어 있는 �
 ## 참고 프로젝트
 - [dnSpy](https://github.com/dnSpy/dnSpy)<br>
 - [LinqPad](#)
+- [ILSpy](https://github.com/icsharpcode/ILSpy)
 
