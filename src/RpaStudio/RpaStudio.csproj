@@ -1,11 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <StartupObject></StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Local\" />
+    <Folder Include="Themes\Units\" />
+    <Folder Include="UI\Units\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Themes\Views\StudioWindow.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
 
 </Project>
