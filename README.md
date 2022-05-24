@@ -22,6 +22,7 @@ RPA는 Robotic Process Automation의 약자이다.<br>
 - [ ] RoslynPad 분석
 - [ ] scriptcs 분석
 - [ ] dnSpy 분석
+- [ ] WinAppDriver 분석
 #
 - [ ] 파일 분할
 - [ ] 선택한 영역의 코드만 실행
