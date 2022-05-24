@@ -23,7 +23,7 @@ namespace ProjectStudio
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly MainViewModelBase _viewModel;
+        //private readonly MainViewModelBase _viewModel;
 
         public MainWindow()
         {

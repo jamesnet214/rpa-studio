@@ -7,6 +7,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="Assets\wpfui.png" />
     <None Remove="Assets\wpfui_full.png" />

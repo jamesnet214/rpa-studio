@@ -7,6 +7,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="RoslynPad.Editor.Windows" Version="1.2.0" />
     <PackageReference Include="RoslynPad.Roslyn.Windows" Version="3.6.0" />
