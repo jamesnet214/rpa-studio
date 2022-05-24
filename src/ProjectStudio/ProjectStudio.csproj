@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\wpfui.png" />
+    <None Remove="Assets\wpfui_full.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RoslynPad.Editor.Windows" Version="1.2.0" />
+    <PackageReference Include="RoslynPad.Roslyn" Version="3.6.0" />
+    <PackageReference Include="RoslynPad.Roslyn.Windows" Version="3.6.0" />
+    <PackageReference Include="WPF-UI" Version="1.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\wpfui.png" />
+    <Resource Include="Assets\wpfui_full.png" />
+  </ItemGroup>
+
+</Project>
