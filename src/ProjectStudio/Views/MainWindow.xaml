@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:ProjectStudio"
         xmlns:pages="clr-namespace:ProjectStudio.Views.Pages"
         xmlns:wpfui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:ui="clr-namespace:RoslynPad.UI;assembly=Project.Common.UI"
         mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance ui:MainViewModelBase}"
+        
         Style="{StaticResource UiWindow}"
         WindowStartupLocation="CenterScreen"
         Title="DevNcoreStudio"

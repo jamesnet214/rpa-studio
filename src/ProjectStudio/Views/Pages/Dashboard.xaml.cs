@@ -1,6 +1,10 @@
-﻿using System;
+﻿using RoslynPad.Editor;
+using RoslynPad.Roslyn;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +27,29 @@ namespace ProjectStudio.Views.Pages
         public Dashboard()
         {
             InitializeComponent();
+
+            Loaded += Dashboard_Loaded;
+        }
+
+        private RoslynHost _host;
+
+
+        private void Dashboard_Loaded(object sender, RoutedEventArgs e)
+        {
+            _host = new RoslynHost(additionalAssemblies: new[]
+          {
+                Assembly.Load("Project.Roslyn.Windows"),
+                Assembly.Load("Project.Editor.Windows")
+            }, RoslynHostReferences.NamespaceDefault.With(assemblyReferences: new[]
+          {
+                typeof(object).Assembly,
+                typeof(System.Text.RegularExpressions.Regex).Assembly,
+                typeof(System.Linq.Enumerable).Assembly,
+            }));
+
+            var workingDirectory = Directory.GetCurrentDirectory();
+            Editor.Initialize(_host, new ClassificationHighlightColors(), workingDirectory, string.Empty, Microsoft.CodeAnalysis.SourceCodeKind.Script);
+
         }
 
         private void Editor_OnLoaded(object sender, RoutedEventArgs e)

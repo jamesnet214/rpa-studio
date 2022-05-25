@@ -6,4 +6,4 @@ using System.Windows;
     genericDictionaryLocation: ResourceDictionaryLocation.SourceAssembly
 )]
 
-[assembly: InternalsVisibleTo("RoslynPad")]
+[assembly: InternalsVisibleTo("ProjectStudio")]

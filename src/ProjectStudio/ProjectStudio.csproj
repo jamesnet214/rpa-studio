@@ -21,10 +21,26 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="RoslynPad.Editor.Windows" Version="1.2.0" />
-    <PackageReference Include="RoslynPad.Roslyn" Version="3.6.0" />
-    <PackageReference Include="RoslynPad.Roslyn.Windows" Version="3.6.0" />
+    <PackageReference Include="AvalonLibrary" Version="2.4.0" />
+    <PackageReference Include="Dirkster.AvalonDock" Version="4.60.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.18.0" />
+    <PackageReference Include="Microsoft.DiaSymReader.Native" Version="1.7.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Mono.Cecil" Version="0.11.4" />
+    <PackageReference Include="System.Runtime.InteropServices.RuntimeInformation" Version="4.3.0" />
     <PackageReference Include="WPF-UI" Version="1.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Common.UI\Project.Common.UI.csproj" />
+    <ProjectReference Include="..\Project.Editor.Windows\Project.Editor.Windows.csproj" />
+    <ProjectReference Include="..\Project.Rumtime\Project.Rumtime.csproj" />
   </ItemGroup>
 
   <ItemGroup>

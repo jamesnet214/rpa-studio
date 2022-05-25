@@ -2,7 +2,7 @@
                     x:ClassModifier="internal"
                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:completion="clr-namespace:RoslynPad.Roslyn.Completion;assembly=RoslynPad.Roslyn">
+                    xmlns:completion="clr-namespace:RoslynPad.Roslyn.Completion;assembly=Project.Roslyn">
     <!-- Licensed from the Visual Studio Image Library -->
     <DrawingImage x:Key="{x:Static completion:Glyph.EnumPublic}">
         <DrawingImage.Drawing>
