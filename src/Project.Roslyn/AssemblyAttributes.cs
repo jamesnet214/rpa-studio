@@ -1,9 +1,9 @@
 ﻿using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("RoslynPad")]
-[assembly: InternalsVisibleTo("RoslynPad.Common.UI")]
-[assembly: InternalsVisibleTo("RoslynPad.Editor.Avalonia")]
-[assembly: InternalsVisibleTo("RoslynPad.Editor.Windows")]
-[assembly: InternalsVisibleTo("RoslynPad.Roslyn.Avalonia")]
-[assembly: InternalsVisibleTo("RoslynPad.Roslyn.Windows")]
-[assembly: InternalsVisibleTo("RoslynPad.Build")]
+// 아래 어셈블리에 현재 프로젝트 내부 클래스를 노출시킨다.
+[assembly: InternalsVisibleTo("Project")]
+[assembly: InternalsVisibleTo("Project.Common.UI")]
+[assembly: InternalsVisibleTo("Project.Editor.Avalonia")]
+[assembly: InternalsVisibleTo("Project.Editor.Windows")]
+[assembly: InternalsVisibleTo("Project.Roslyn.Windows")]
+[assembly: InternalsVisibleTo("Project.Build")]

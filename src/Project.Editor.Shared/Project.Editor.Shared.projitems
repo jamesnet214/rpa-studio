@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>bb3bc325-3cc3-4990-b149-52bd94434c70</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Project.Editor.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AvalonEditTextContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BraceMatcherHighlightRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClassificationHighlightColors.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CodeSnippet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CodeTextEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CompletionResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContextActionsRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DocumentUtilities.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IClassificationHighlightColors.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ICodeEditorCompletionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ICompletionDataEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IContextActionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PropertyOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ReflectionUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RoslynCodeEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RoslynCodeEditorCompletionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RoslynCompletionData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RoslynContextActionProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RoslynHighlightingColorizer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RoslynOverloadProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RoslynSemanticHighlighter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SnippetInfoService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SnippetManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TextMarker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TextMarkerService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TextMarkerToolTipProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TextViewExtensions.cs" />
+  </ItemGroup>
+</Project>
