@@ -145,8 +145,8 @@ namespace ProjectStudio
 
         private void SaveWindowLayout()
         {
-            _viewModel.Settings.WindowBounds = RestoreBounds.ToString(CultureInfo.InvariantCulture);
-            _viewModel.Settings.WindowState = WindowState.ToString();
+            //_viewModel.Settings.WindowBounds = RestoreBounds.ToString(CultureInfo.InvariantCulture);
+            //_viewModel.Settings.WindowState = WindowState.ToString();
         }
 
         private void LoadDockLayout()
