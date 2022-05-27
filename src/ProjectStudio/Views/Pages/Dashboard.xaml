@@ -10,13 +10,56 @@
       Title="Main">
 
     <Grid>
-        <editor:RoslynCodeEditor x:Name="Editor"
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <StackPanel Orientation="Horizontal">
+                <Button Command="{Binding RunCommand, Mode=OneTime}" ToolTip="Run (F5)">
+                    <Grid>
+                        <Image>
+                            <Image.Style>
+                                <Style TargetType="Image">
+                                    <Setter Property="Source" Value="{StaticResource Run}" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsLiveMode}" Value="True">
+                                            <Setter Property="Source" Value="{StaticResource Rocket}" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                        <!--<ProgressBar VerticalAlignment="Bottom" Height="4" IsIndeterminate="{Binding IsRunning}" BorderThickness="0"
+                                     Visibility="{Binding IsRunning, Converter={StaticResource BooleanToVisibilityConverter}}" />-->
+                    </Grid>
+                </Button>
+
+                <Button Command="{Binding RunCommand, Mode=OneTime}" ToolTip="Terminate process (Shift+F5)">
+                    <Grid>
+                        <Image>
+                            <Image.Style>
+                                <Style TargetType="Image">
+                                    <Setter Property="Source" Value="{StaticResource Stop}" />
+                                </Style>
+                            </Image.Style>
+                        </Image>
+                    </Grid>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <editor:RoslynCodeEditor x:Name="Editor"
                                  x:FieldModifier="private"
                                  ContextActionsIcon="{StaticResource Bulb}"
                                  IsBraceCompletionEnabled="{Binding MainViewModel.Settings.EnableBraceCompletion}"
-                                 FontFamily="Consolas"
+                                 FontFamily="Consolas" FontSize="20"
                                  Grid.Row="1"
                                  Grid.Column="0"
-                                 Loaded="Editor_OnLoaded" />
+                                 Loaded="Editor_OnLoaded" />    
+        </Grid>
+        
     </Grid>
 </Page>

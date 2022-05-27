@@ -2,6 +2,7 @@
 using RoslynPad.Roslyn;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -28,7 +29,8 @@ namespace ProjectStudio.Views.Pages
         {
             InitializeComponent();
 
-            Loaded += Dashboard_Loaded;
+            Loaded += Dashboard_Loaded;            
+            
         }
 
         private RoslynHost _host;
@@ -37,19 +39,33 @@ namespace ProjectStudio.Views.Pages
         private void Dashboard_Loaded(object sender, RoutedEventArgs e)
         {
             _host = new RoslynHost(additionalAssemblies: new[]
-          {
+            {
                 Assembly.Load("Project.Roslyn.Windows"),
                 Assembly.Load("Project.Editor.Windows")
-            }, RoslynHostReferences.NamespaceDefault.With(assemblyReferences: new[]
-          {
+            }, 
+            RoslynHostReferences.NamespaceDefault.With(assemblyReferences: new[]
+            {
                 typeof(object).Assembly,
                 typeof(System.Text.RegularExpressions.Regex).Assembly,
-                typeof(System.Linq.Enumerable).Assembly,
-            }));
+                typeof(System.Linq.Enumerable).Assembly,                
+            },
+            imports: new[] { "Project.Runtime" }
+            ));
 
             var workingDirectory = Directory.GetCurrentDirectory();
             Editor.Initialize(_host, new ClassificationHighlightColors(), workingDirectory, string.Empty, Microsoft.CodeAnalysis.SourceCodeKind.Script);
 
+            Editor.PreviewMouseWheel += EditorOnPreviewMouseWheel;
+
+        }
+
+        private void EditorOnPreviewMouseWheel(object sender, MouseWheelEventArgs args)
+        {           
+            if (Keyboard.Modifiers.HasFlag(ModifierKeys.Control))
+            {
+                Editor.FontSize += args.Delta > 0 ? 1 : -1;
+                args.Handled = true;
+            }
         }
 
         private void Editor_OnLoaded(object sender, RoutedEventArgs e)

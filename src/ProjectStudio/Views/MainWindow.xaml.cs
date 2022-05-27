@@ -83,31 +83,31 @@ namespace ProjectStudio
         {
             base.OnClosing(e);
 
-            if (!_isClosing)
-            {
-                SaveDockLayout();
-                SaveWindowLayout();
+            //if (!_isClosing)
+            //{
+            //    SaveDockLayout();
+            //    SaveWindowLayout();
 
-                _isClosing = true;
-                IsEnabled = false;
-                e.Cancel = true;
+            //    _isClosing = true;
+            //    IsEnabled = false;
+            //    e.Cancel = true;
 
-                try
-                {
-                    await Task.Run(() => _viewModel.OnExit()).ConfigureAwait(true);
-                }
-                catch
-                {
-                    // ignored
-                }
+            //    try
+            //    {
+            //        await Task.Run(() => _viewModel.OnExit()).ConfigureAwait(true);
+            //    }
+            //    catch
+            //    {
+            //        // ignored
+            //    }
 
-                _isClosed = true;
-                var closeTask = Dispatcher.InvokeAsync(Close);
-            }
-            else
-            {
-                e.Cancel = !_isClosed;
-            }
+            //    _isClosed = true;
+            //    var closeTask = Dispatcher.InvokeAsync(Close);
+            //}
+            //else
+            //{
+            //    e.Cancel = !_isClosed;
+            //}
         }
 
         private void LoadWindowLayout()
